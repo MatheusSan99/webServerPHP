@@ -28,7 +28,7 @@ Este servidor pode ser acessado de qualquer computador na mesma rede local (Wi-F
 1. Clone o repositório:
 
    ```bash
-   git clone https://github.com/MatheusSan99/nome-do-repositorio.git
+   git clone https://github.com/MatheusSan99/webServerPHP.git
    ```
 
 2. Instale as dependências via Composer:
