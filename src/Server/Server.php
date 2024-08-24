@@ -94,6 +94,10 @@ class Server
         $body = $response->getBodyString();
         $status = $response->getStatusString();
 
+        if (!preg_match('/^\d{3} [a-zA-Z ]+$/', $status)) {
+            $status = "500 Internal Server Error";
+        }
+
         $responseString = "HTTP/1.1 $status\r\n$headers\r\n\r\n$body";
         socket_write($client, $responseString);
     }
